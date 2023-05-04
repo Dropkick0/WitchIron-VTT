@@ -1,0 +1,44 @@
+{{!-- This template is a fallback for when items don't have more specific templates. --}}
+{{!-- Generally, you'll want to make more specific templates when possible. --}}
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="attributes">Attributes</a>
+    <a class="item" data-tab="abilities">Abilities</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+      {{editor item.description target="item.description" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+
+    {{!-- Attributes Tab --}}
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
+      <label for="blood">Blood:</label>
+      <input name="data.blood" type="number" value="{{item.data.blood.value}}" min="{{item.data.blood.min}}" max="{{item.data.blood.max}}" data-dtype="Number"/>
+      <br>
+      <label for="stamina">Stamina:</label>
+      <input name="data.stamina" type="number" value="{{item.data.stamina.value}}" min="{{item.data.stamina.min}}" max="{{item.data.stamina.max}}" data-dtype="Number"/>
+    </div>
+
+    {{!-- Abilities Tab --}}
+    <div class="tab abilities" data-group="primary" data-tab="abilities">
+      {{#each item.data.abilities as |ability name|}}
+        <label for="{{name}}">{{name.capitalize()}}:</label>
+        <input name="data.abilities.{{name}}" type="number" value="{{ability.value}}" data-dtype="Number"/>
+        <br>
+      {{/each}}
+    </div>
+  </section>
+</form>

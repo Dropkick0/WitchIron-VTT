@@ -1,0 +1,36 @@
+{
+  "WITCHIRON.AbilityMuscle": "Muscle",
+  "WITCHIRON.AbilityRobustness": "Robustness",
+  "WITCHIRON.AbilityAgility": "Agility",
+  "WITCHIRON.AbilityQuickness": "Quickness",
+  "WITCHIRON.AbilityFinesse": "Finesse",
+  "WITCHIRON.AbilityIntelligence": "Intelligence",
+  "WITCHIRON.AbilityWillpower": "Willpower",
+  "WITCHIRON.AbilityPersonality": "Personality",
+  "WITCHIRON.AbilityLuck": "Luck",
+  "WITCHIRON.AbilitySpeed": "Speed",
+  "WITCHIRON.AbilityAttacks": "Attacks",
+  "WITCHIRON.AbilityMagickFaith": "Magick Faith",
+  "WITCHIRON.AbilityLifespan": "Lifespan",
+
+  "WITCHIRON.AbilityMuscleAbbr": "mus",
+  "WITCHIRON.AbilityRobustnessAbbr": "rob",
+  "WITCHIRON.AbilityAgilityAbbr": "agi",
+  "WITCHIRON.AbilityQuicknessAbbr": "qui",
+  "WITCHIRON.AbilityFinesseAbbr": "fin",
+  "WITCHIRON.AbilityIntelligenceAbbr": "int",
+  "WITCHIRON.AbilityWillpowerAbbr": "wil",
+  "WITCHIRON.AbilityPersonalityAbbr": "per",
+  "WITCHIRON.AbilityLuckAbbr": "luc",
+  "WITCHIRON.AbilitySpeedAbbr": "spd",
+  "WITCHIRON.AbilityAttacksAbbr": "att",
+  "WITCHIRON.AbilityMagickFaithAbbr": "mag",
+  "WITCHIRON.AbilityLifespanAbbr": "lif",
+
+  "WITCHIRON.EffectCreate": "Create Effect",
+  "WITCHIRON.EffectToggle": "Toggle Effect",
+  "WITCHIRON.EffectEdit": "Edit Effect",
+  "WITCHIRON.EffectDelete": "Delete Effect",
+
+  "WITCHIRON.Add": "Add"
+}

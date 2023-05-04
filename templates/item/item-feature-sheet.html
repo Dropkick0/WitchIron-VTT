@@ -1,0 +1,65 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="attributes">Attributes</a>
+    <a class="item" data-tab="abilities">Abilities</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+
+    {{!-- Attributes Tab --}}
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
+      {{!-- Add new fields for attributes here --}}
+    </div>
+
+    {{!-- Abilities Tab --}}
+    <div class="tab abilities" data-group="primary" data-tab="abilities">
+      {{!-- Muscle --}}
+      <div class="ability muscle">
+        <label for="muscle">Muscle</label>
+        <input name="muscle" type="number" value="{{item.abilities.muscle.value}}" min="0" max="20" placeholder="Muscle"/>
+      </div>
+
+      {{!-- Robustness --}}
+      <div class="ability robustness">
+        <label for="robustness">Robustness</label>
+        <input name="robustness" type="number" value="{{item.abilities.robustness.value}}" min="0" max="20" placeholder="Robustness"/>
+      </div>
+
+      {{!-- Agility --}}
+      <div class="ability agility">
+        <label for="agility">Agility</label>
+        <input name="agility" type="number" value="{{item.abilities.agility.value}}" min="0" max="20" placeholder="Agility"/>
+      </div>
+
+      {{!-- Quickness --}}
+      <div class="ability quickness">
+        <label for="quickness">Quickness</label>
+        <input name="quickness" type="number" value="{{item.abilities.quickness.value}}" min="0" max="20" placeholder="Quickness"/>
+      </div>
+
+      {{!-- Finesse --}}
+      <div class="ability finesse">
+        <label for="finesse">Finesse</label>
+        <input name="finesse" type="number" value="{{item.abilities.finesse.value}}" min="0" max="20" placeholder="Finesse"/>
+      </div>
+
+      {{!-- Add more fields for other abilities here --}}
+    </div>
+  </section>
+
+</form>
