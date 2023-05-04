@@ -1,0 +1,48 @@
+<!-- systems/witchiron/templates/actor/actor-sheet.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Witch Iron Actor Sheet</title>
+</head>
+<body>
+  <form>
+    <div class="sheet-body">
+      <div class="sheet-tabs">
+        <nav class="navigation">
+          <a class="item" data-tab="features">Features</a>
+          <a class="item" data-tab="abilities">Abilities</a>
+          <a class="item" data-tab="inventory">Inventory</a>
+        </nav>
+      </div>
+
+      <div class="tab features" data-group="features">
+        <input type="text" name="name" value="{{actor.name}}" placeholder="Name" />
+        <input type="number" name="data.blood.value" value="{{actor.data.blood.value}}" min="{{actor.data.blood.min}}" max="{{actor.data.blood.max}}" placeholder="Blood" />
+        <input type="number" name="data.stamina.value" value="{{actor.data.stamina.value}}" min="{{actor.data.stamina.min}}" max="{{actor.data.stamina.max}}" placeholder="Stamina" />
+      </div>
+
+      <div class="tab abilities" data-group="abilities">
+        <!-- Iterate over the actor's abilities and render the appropriate input fields -->
+        {{#each actor.data.abilities as |ability key|}}
+          <div class="ability">
+            <label>{{ability.label}}</label>
+            <input type="number" name="data.abilities.{{key}}.value" value="{{ability.value}}" />
+          </div>
+        {{/each}}
+      </div>
+
+      <div class="tab inventory" data-group="inventory">
+        <!-- Display owned items here -->
+        {{#each items as |item|}}
+          <div class="item">
+            <img src="{{item.img}}" />
+            <h4>{{item.name}}</h4>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </form>
+</body>
+</html>

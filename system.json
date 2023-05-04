@@ -1,0 +1,34 @@
+{
+  "id": "witchiron",
+  "title": "Witch Iron",
+  "description": "Witch Iron is a dark fantasy roleplaying game set in a world of witchcraft, mysterious powers, and lineage-based mechanics.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": 10,
+    "verified": "10.287",
+    "maximum": 10
+  },
+  "authors": [{
+    "name": "Ethan Rowe"
+  }],
+  "esmodules": ["module/witchiron.mjs"],
+  "styles": ["css/witchiron.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "blood",
+  "secondaryTokenAttribute": "stamina",
+  "url": "https://github.com/username/witch-iron",
+  "manifest": "https://github.com/Dropkick0/WitchIron/releases/latest/download/system.json",
+  "download": "https://github.com/Dropkick0/WitchIron/archive/refs/tags/test.zip",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md"
+}

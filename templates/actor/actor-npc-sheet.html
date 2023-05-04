@@ -1,0 +1,65 @@
+<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+      <div class="resources grid grid-3col">
+
+        <div class="resource flex-group-center">
+          <label for="data.blood.value" class="resource-label">Blood</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="data.blood.value" value="{{data.blood.value}}" data-dtype="Number"/>
+            <span> / </span>
+            <input type="text" name="data.blood.max" value="{{data.blood.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="data.stamina.value" class="resource-label">Stamina</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="data.stamina.value" value="{{data.stamina.value}}" data-dtype="Number"/>
+            <span> / </span>
+            <input type="text" name="data.stamina.max" value="{{data.stamina.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="data.level" class="resource-label">Level</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="data.level" value="{{data.level}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="abilities">Abilities</a>
+    <a class="item" data-tab="items">Items</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Biography Tab --}}
+    <div class="tab biography" data-group="primary" data-tab="description">
+      {{editor data.biography target="data.biography" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+
+    {{!-- Abilities Tab --}}
+    <div class="tab abilities" data-group="primary" data-tab="abilities">
+      {{> "systems/witchiron/templates/actor/parts/actor-abilities.html"}}
+    </div>
+
+    {{!-- Owned Items Tab --}}
+    <div class="tab items" data-group="primary" data-tab="items">
+       {{> "systems/witchiron/templates/actor/parts/actor-items.html"}}
+    </div>
+
+  </section>
+</form>

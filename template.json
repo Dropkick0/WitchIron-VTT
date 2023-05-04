@@ -1,0 +1,119 @@
+{
+  "Actor": {
+    "types": ["descendant", "npc"],
+    "templates": {
+      "base": {
+        "blood": {
+          "value": 10,
+          "min": 0,
+          "max": 10
+        },
+        "stamina": {
+          "value": 5,
+          "min": 0,
+          "max": 5
+        },
+        "biography": ""
+      }
+    },
+    "descendant": {
+      "templates": ["base"],
+      "attributes": {
+        "level": {
+          "value": 1
+        },
+        "abilities": {
+          "muscle": {
+            "value": 10
+          },
+          "robustness": {
+            "value": 10
+          },
+          "agility": {
+            "value": 10
+          },
+          "quickness": {
+            "value": 10
+          },
+          "finesse": {
+            "value": 10
+          },
+          "intelligence": {
+            "value": 10
+          },
+          "willpower": {
+            "value": 10
+          },
+          "personality": {
+            "value": 10
+          },
+          "luck": {
+            "value": 10
+          },
+          "speed": {
+            "value": 10
+          },
+          "attacks": {
+            "value": 10
+          },
+          "magick_faith": {
+            "value": 10
+          },
+          "lifespan": {
+            "value": 10
+          },
+          "genetic_traits": {
+            "type": "Array",
+            "length": 3
+          },
+          "lineages": {
+            "type": "Array",
+            "length": 2
+          }
+        }
+      }
+    },
+    "npc": {
+      "templates": ["base"],
+      "HD": 0
+    }
+  },
+  "Item": {
+    "types": ["skill", "talent", "item", "weapon", "armor", "spell", "genetic_trait", "lineage"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "skill": {
+      "templates": ["base"]
+    },
+    "talent": {
+      "templates": ["base"]
+    },
+    "item": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0,
+      "formula": "d20"
+    },
+    "weapon": {
+      "templates": ["base"]
+    },
+    "armor": {
+      "templates": ["base"]
+    },
+    "spell": {
+      "templates": ["base"],
+      "tier": 1
+    },
+    "genetic_trait": {
+      "templates": ["base"],
+      "duality": false
+    },
+    "lineage": {
+      "templates": ["base"],
+      "associated_abilities": "Array"
+    }
+  }
+}
