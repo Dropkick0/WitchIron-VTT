@@ -1,5 +1,3 @@
-<!-- systems/witchiron/templates/actor/actor-sheet.html -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,22 +7,27 @@
 <body>
   <form>
     <div class="sheet-body">
-      <div class="sheet-tabs">
-        <nav class="navigation">
-          <a class="item" data-tab="features">Features</a>
-          <a class="item" data-tab="abilities">Abilities</a>
-          <a class="item" data-tab="inventory">Inventory</a>
-        </nav>
-      </div>
+      <nav class="sheet-tabs navigation">
+        <a class="item" data-tab="features">Features</a>
+        <a class="item" data-tab="abilities">Abilities</a>
+        <a class="item" data-tab="lineages">Lineages</a>
+        <a class="item" data-tab="demonic">Demonic Influence</a>
+        <a class="item" data-tab="conflict">Conflict Resolution</a>
+        <a class="item" data-tab="alchemy">Alchemy & Inventing</a>
+        <a class="item" data-tab="advancement">Advancement</a>
+        <a class="item" data-tab="combat">Combat & Injury</a>
+        <a class="item" data-tab="inventory">Inventory</a>
+      </nav>
 
       <div class="tab features" data-group="features">
         <input type="text" name="name" value="{{actor.name}}" placeholder="Name" />
         <input type="number" name="data.blood.value" value="{{actor.data.blood.value}}" min="{{actor.data.blood.min}}" max="{{actor.data.blood.max}}" placeholder="Blood" />
         <input type="number" name="data.stamina.value" value="{{actor.data.stamina.value}}" min="{{actor.data.stamina.min}}" max="{{actor.data.stamina.max}}" placeholder="Stamina" />
+        <input type="number" name="data.luck.value" value="{{actor.data.luck.value}}" min="{{actor.data.luck.min}}" max="{{actor.data.luck.max}}" placeholder="Luck" />
+        <input type="number" name="data.encumbrance.value" value="{{actor.data.encumbrance.value}}" min="{{actor.data.encumbrance.min}}" max="{{actor.data.encumbrance.max}}" placeholder="Max Encumbrance" />
       </div>
 
       <div class="tab abilities" data-group="abilities">
-        <!-- Iterate over the actor's abilities and render the appropriate input fields -->
         {{#each actor.data.abilities as |ability key|}}
           <div class="ability">
             <label>{{ability.label}}</label>
@@ -33,8 +36,9 @@
         {{/each}}
       </div>
 
+      <!-- Add new tabs for Lineages, Demonic Influence, Conflict Resolution, Alchemy & Inventing, Advancement, and Combat & Injury here -->
+
       <div class="tab inventory" data-group="inventory">
-        <!-- Display owned items here -->
         {{#each items as |item|}}
           <div class="item">
             <img src="{{item.img}}" />
