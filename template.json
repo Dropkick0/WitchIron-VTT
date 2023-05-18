@@ -13,7 +13,53 @@
           "min": 0,
           "max": 5
         },
-        "biography": ""
+        "biography": "",
+        "genetic_traits": {
+          "type": "Array",
+          "length": 3
+        },
+        "lineages": {
+          "type": "Array",
+          "length": 2
+        },
+        "demonic_influence": {
+          "value": 0,
+          "min": 0,
+          "max": 10
+        },
+        "alchemy": {
+          "value": 0,
+          "min": 0,
+          "max": 10
+        },
+        "inventing": {
+          "value": 0,
+          "min": 0,
+          "max": 10
+        },
+        "spell_writing": {
+          "value": 0,
+          "min": 0,
+          "max": 10
+        },
+        "miracle_working": {
+          "value": 0,
+          "min": 0,
+          "max": 10
+        },
+        "xp": {
+          "value": 0,
+          "min": 0
+        },
+        "max_encumbrance": {
+          "value": 0,
+          "min": 0
+        },
+        "combat": {
+          "hit_location": "",
+          "injury": "",
+          "critical_hits": ""
+        }
       }
     },
     "descendant": {
@@ -61,14 +107,6 @@
           },
           "lifespan": {
             "value": 10
-          },
-          "genetic_traits": {
-            "type": "Array",
-            "length": 3
-          },
-          "lineages": {
-            "type": "Array",
-            "length": 2
           }
         }
       }
