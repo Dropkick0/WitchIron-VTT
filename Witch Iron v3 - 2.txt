@@ -1,0 +1,148 @@
+Use mountâ€™s Speed instead of own.
+Defend against attacks to mount with -20% penalty.
+Conditions:
+
+Conditions occupy Enc slots and are removed by specific actions.
+Aflame / Bleed / Poison: Roll d6 end of each round. Less or equal to (Rating) makes Hardship Quarrel vs (Rating) Hits to remove or die.
+Blind / Deaf / Pain: (Rating) x 10% Check penalty. Reduce by one each hour.
+Corruption / Stress: Gain three stacks to make a Hardship or Steel Quarrel vs (Rating) Hits or change.
+Fatigue: Removed by a good nightâ€™s rest.
+Entangle / Helpless / Stun: Prevents Actions and/or Movement. Reduce by one each round.
+Prone: -20% Check penalty to you and +20% Check bonus to opponents. Removed by standing up.
+Trauma: (Rating) x 20% penalty on Checks involving (Location). Removed by resting one month per Rating.
+Injuries:
+
+Injuries occur on specific body locations (Head, Torso).
+Determine
+Witch Iron TTRPG Foundry VTT System Summary:
+
+Injury System:
+
+Net Damage calculation: (Weapon Damage + Net Hits) - (Armor Value + Resistance Bonus)
+Injury location and effects determined by the Net Damage on either arms/legs or non-living limbs.
+Injury effects range from bruises to loss of limbs, inflicting conditions like Pain, Trauma, Bleed, and may require Healing or Surgery.
+Non-living limbs do not suffer from Bleed or Pain conditions.
+Mutation System:
+
+Mutation occurs when Corruption sinks in. This reduces the character's Willpower by 10 and removes all Corruption.
+Upon gaining a mutation, benefits could include bonus hits, special abilities, weapons, armor, movement, etc.
+The nature of mutation is determined through rolls on the Mutation Table, combining different factors like living things, body parts, elements, functions, and miscellaneous factors.
+Madness System:
+
+Madness occurs when Stress overcomes the character. This reduces the character's Willpower by 10 and removes all Stress.
+Upon gaining madness, benefits could include bonus hits, special abilities, weapons, armor, movement, etc.
+The nature of madness is determined through rolls on the Madness Table, combining different factors like living things, emotions, objects, awakening, and miscellaneous factors.
+For both the Mutation and Madness systems, if a character's Willpower reaches zero, they become a non-player character serving the Dark Gods.
+"Witch Iron" is a tabletop RPG system that involves the casting of spells and dealing with the consequences of manipulating arcane forces.
+
+Key Mechanics:
+
+Casting Spells: When casting a spell, players roll up to their Magick value in d10s. The spell is cast successfully if the roll result equals or exceeds the spell's Casting Hits (CH). Spells can also be cast over multiple rounds in an Extended Check if the initial roll exceeds the CH.
+
+Curse of the Wicked Winds: Miscasting can escalate depending on the number of Casting Checks made, ranging from a Petty Miscast to a Cataclysmic Miscast. The scale of the Miscast and its effects are determined by the Miscast tables.
+
+Apprentice's Folly and Slow Death: Rolling a one on all dice results in a spell failure and a three-step Miscast escalation. Choosing not to roll for Miscast results in gaining Corruption.
+
+Spellcasting Modifiers: Conditions and armor can affect spellcasting. Conditions like deafness impose a -1 penalty on Casting Checks, while heavier armors also impose a penalty.
+
+Spontaneous Spells: This feature allows players to spontaneously cast spells by choosing one of three techniques ("I Create", "I Purge", "I Command") and combining it with a Domain of a wind they control. The effects of these spells depend on the amount of Casting Hits scored, affecting their scale, area, duration, and other parameters.
+
+Magick Miscasts: There are three categories of miscasts: Petty, Great, and Cataclysmic, each with different potential outcomes when they occur.
+
+Magick-Tainted: Players gain a Magick-Taint for every two Spells learned. Each Taint is based on a Domain of a Wind.
+
+Winds and Domains: The system outlines specific "Winds", each with different Domains and Spells. Each Wind is associated with different thematic areas (e.g., the Blue Wind is associated with Weather & Fate, the Brown Wind with Beasts & Savagery, and the Gold Wind with Metal & Innovation).
+
+The information provided includes a set of specific spells for each Wind and suggestions for spontaneously created spells at different CH values for each Wind. The effects of each spell and its Casting Hits (CH) requirement are described.
+
+This system requires players to carefully manage their Magick use and risks while considering the thematic implications of their chosen Wind and its associated Domains. The system incorporates elements of luck, strategy, and risk management, emphasizing narrative and thematic coherence.
+The wind harmonizes all elements.
++5
+You can combine different magicks, creating a small mixed effect.
++10
+You can utilize magick from different Winds to accomplish tasks with more precision.
++15
+You can augment other spells with the power of multiple Winds.
++20
+You can perfectly blend magicks to create a unique spell.
++25
+You can create a powerful magickal effect that utilizes multiple Winds.
++30
+You can create a massive magickal effect that draws power from all Winds.
++35
+You can alter reality by combining the magicks of all Winds.
++40
+You can create new magickal laws by combining the power of all Winds.
++45
+You can create a new reality by perfectly blending the power of all Winds.
++50
+You can ascend to a godlike state by perfectly utilizing the magicks of all Winds.
+
+Each Wind (Green, Gray, Purple, Red, White, Defiled, Refined) provides unique spells and spontaneous magick abilities, with difficulty levels ranging from +0 to +50 in Witch Iron. For example, the Green Wind deals with nature and healing, while the Gray Wind focuses on illusion and thought manipulation. Spontaneous Magick outlines the effect you can achieve based on the difficulty level.
+
+Each Wind spells have a CH value that likely represents the casting difficulty, and the effects can range from damage and control to healing and protection. They often have specific effects such as causing wounds, creating illusions, controlling targets, etc., and typically have a range, duration, and potentially additional mechanics like requiring a Quarrel (possibly some type of contest or save).
+
+The Defiled and Refined Winds are special, requiring specific conditions to learn their spells. Defiled Winds spells always cause a Corruption Condition to the caster, while Refined Winds spells are harder to research.
+
+The main mechanic for casting spells seems to involve rolls based on a number of six-sided dice (d6). There is mention of a Damage Roll, Wounds, Conditions, and Hits, indicating there may be a combat system in place as well.
+
+In the Foundry VTT system, all these spells, abilities, and their effects can be coded as items or features that can be utilized by characters. The spells would have their CH value, description, and effects programmed into them. A mechanic would also be needed to represent the Spontaneous Magick system, possibly with a feature that enables characters to attempt a task at a chosen difficulty level, with the success and effect determined based on the roll against the CH value.
+
+In addition, a combat system needs to be put in place to utilize the combat mechanics indicated in the spells. This system would need to include mechanics for resolving a Quarrel, applying and removing Conditions, determining Wounds, and handling other combat and non-combat interactions.
+
+The system should also handle special rules like the Corruption Condition from Defiled Winds and the -10 CH to research Refined Winds spells. The Spontaneous Magick system could be implemented as a flexible casting system, where characters can attempt effects of a certain level based on the CH value.
+
+Given the complexity of the Witch Iron rules, careful programming and testing would be required to ensure that all mechanics work together properly in the Foundry VTT system.
+Witch Iron RPG for Foundry VTT System Summary
+
+Magic and Faith System
+
+Magic: This game features a tiered progression of magical powers, with each higher level granting a greater degree of control and manipulation over the winds of magic. Each tier also adds a bonus to the characters abilities (+5 to +50). Magic abilities range from manipulating magical winds, creating effects like storms, summoning magical constructs, warping reality, to becoming a godlike being with control over elements.
+
+Faith: Players cast spells by channeling their deity's power. The process involves rolling a number of d10s equal to the player's Magick/Faith. If the total is equal to or greater than the miracleâ€™s Casting Hits (CH), the spell is successfully cast. Overcasting occurs when a die rolls a ten; this causes an escalation of Divine Wrath for each additional Casting Check.
+
+Divine Wrath: When players overcast or all dice roll a one, they risk incurring Divine Wrath. This could manifest in various ways, such as damage to the player, the loss of items, or the summoning of demons.
+
+Spontaneous Miracles: Players can create Spontaneous Miracles by combining one of three techniques with a Presence of a God they worship. These techniques include "I Bless...", "I Curse...", and "I Commune...".
+
+God-Stain: God-Stains are marks left by the gods on their devotees. Players gain a God-Stain for every two miracles they learn. These can grant various benefits or penalties based on the deity's presence.
+
+Gods and Miracles
+
+Bygorr, the God Hunter: Devotees of Bygorr have abilities related to survival and nature. The miracles of Bygorr include granting weapons, senses of the wild, speed, and the ability to command the wild.
+
+Corvis, the God Thief: Corvis grants miracles related to luck and trickery. These can force targets to take additional actions, hide the user, enable theft, or increase luck.
+
+Implementing in Foundry VTT
+
+For implementing in Foundry VTT, each of these mechanics would need to be built out. You would need to:
+
+Create character sheets that include fields for Magick/Faith and a space to track Divine Wrath and God-Stains.
+Define the miracles for each God, listing them along with their Casting Hits (CH) values and effects.
+Create a table for Divine Wrath outcomes that can be easily referenced during gameplay.
+Set up an option for Spontaneous Miracles, allowing players to select a technique and a Presence to generate new effects.
+Generate systems to manage the God-Stain mechanic, allowing players to earn and track these marks and their effects.
+Witch Iron Foundry VTT System Information
+
+Entities:
+
+Dominus
+Furnos, the God Wolf
+Minera, the God Tonic
+Nox, the God Tomb
+Thonjun, the God Whale
+Ynir, the God Harvest
+Each has attributes such as Presence, Miracles, and Spontaneous Magick with varying Challenge (CH) levels.
+
+Mechanics:
+
+Bonuses (e.g. "+40") add to the effectiveness of an ability.
+Certain abilities target areas with radii (e.g. "40ft area(r) within short range").
+Some abilities deal damage or cause conditions (e.g. "d6 as a Damage Roll to deal 1 Wound").
+Time-limited abilities have durations often denoted in rounds (r) or minutes/hours.
+Spontaneous Magick lists potential effects at various CH levels.
+Items:
+
+Yeoman Weapons: Bear Spear, Improvised Weapon, Hatchet, Mallet, Pitchfork, Scythe, Woodcutterâ€™s Axe.
+Dockside Weapons: Club, Crowbar, Knife.
+Each weapon has Encumbrance (Enc), Price, Damage Bonus (Dmg), and special Qualities & Flaws.

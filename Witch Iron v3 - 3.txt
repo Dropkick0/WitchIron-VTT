@@ -1,0 +1,148 @@
+Required Info to model:
+
+Abilities for each entity, their CH levels and effects.
+How to handle area targeting and conditions.
+How to model weapon stats and calculate damage.
+How time limits impact the game round structure.
+How bonuses influence player character abilities.
+Conversion of text-based game stats into Foundry VTT-compatible format.
+Based on the provided text, it appears to be a listing of weapons, their properties, and costs for a tabletop RPG named "Witch Iron". This information can be used to create an interactive system for Foundry VTT. Here is a summary of the key elements you'll need:
+
+Weapons:
+Each weapon has a set of attributes which includes:
+
+Name (e.g., Cutlass, Foil, Bayonet)
+Encumbrance (e.g., 1, 2)
+Price (e.g., 20s, 30s, 10s)
+Damage Modifier (e.g., MB+4, d6+MB, 2d6+MB+4)
+Qualities & Flaws (e.g., Brutal 2, Infight, Defend 1)
+Weapon Categories:
+Weapons are grouped into several categories including:
+
+Common Weapons
+Aristocratic Weapons
+Battlefield Weapons
+Tournament Weapons
+Frontier Arms
+Common Arms
+Urban Arms
+Battlefield Arms
+Weapon Qualities:
+Weapon qualities provide special benefits or penalties during combat. Examples include:
+
+Accurate: Gains hits when attacking.
+Bleed: Inflicts Bleed Condition.
+Brutal: Grants a bonus to Damage Rolls.
+Defend: Gains hits when defending.
+Infight: May automatically inflict a Damage Roll instead of attacking while grappling.
+Reach: Can Engage opponents at a certain distance away.
+Reload: The weapon needs to be reloaded after firing, which takes a number of rounds.
+Two-Handed: The weapon requires two hands to wield, gaining +1 Damage Dice.
+Ranges:
+
+Short: About 30ft
+Medium: About 60ft
+Long: About 90ft
+Extreme: About 120ft
+In creating a Foundry VTT system, you would create a data structure for each weapon which includes its name, encumbrance, price, damage modifier, and any qualities & flaws it has. For weapon qualities, create an object that maps the name of the quality to its effects. This can be used to apply effects during combat. Ranges would be used to determine how far a weapon can be effectively used.
+Here's a summarized outline for creating a Foundry VTT system based on the Witch Iron TTRPG. Please note that Foundry VTT allows for custom data systems, so you might need to adapt this information to fit with your specific usage and requirements.
+
+1. Items
+
+Weapons
+Bolt (20), Hardened bolt (20), Lead bullet (20), Stone bullet (20)
+Armor
+Gambeson (Arming Cap, Arming Trousers, Gambeson)
+Chain (Chain Chausses, Chain Coat, Chain Coif)
+Brigandine (Brigandine Bracer, Brigandine Chausses, Brigandine Vest)
+Steel (Steel Bracer, Steel Breastplate, Steel Greaves, Steel Helm)
+Misc (Bear Cloak, Skull Trophies, Tournament Bracer)
+Trappings
+Numerous items with varying cost and encumbrance including: Air Bladder, Ink, Tinderbox, Bedroll, Instrument, Torch, Block & Tackle, Ladder, Bottle, Empty, Book, Blank, Lantern, Waterskin, etc.
+Followers
+Includes Porter, Torchbearer, Laborer, Crew, Bondsman, Barber-Surgeon, Mercenary, Delver, Coachman, Captain, Light Horse, War Horse, Small & Vicious Dog, War Dog.
+2. Systems
+
+Armor system
+Armor Value for Soak
+Qualities and Flaws such as Beastskin, Built-In, Fear, Hit Location, Scaled, Weather-Proof, Under-Layer, Obstruct, Stiff, Weak-Spot, Ugly.
+Follower System
+Various followers with varying costs, abilities, assists with, and limits.
+3. Lineages
+
+Anchorite
+Places of Interest: R
+Gain +10% to the following Abilities: F
+Lineage Talents: (Details needed)
+This is a generalized overview, and you might want to create specific entities in the Foundry VTT for the various items, armors, followers, lineages, etc., each with their own properties, descriptions, costs, and other stats as provided in the Witch Iron TTRPG.
+
+For each item or follower, you'd likely have properties like "name", "cost", "description", "properties", "abilities", etc., which can be filled out with the appropriate information. Similarly, for the systems, you might create custom systems/rules that govern the gameplay according to the Witch Iron TTRPG. The Lineages would likely be a separate system or character creation option, again with properties to fill out based on the information provided.
+
+Remember to respect the intellectual property rights of the original game creators when creating your Foundry VTT system.
+Witch Iron is a TTRPG with various lineages that have distinct abilities and talents. Here's a summary of each lineage's key information for creating a Foundry VTT system:
+
+Arcanist:
+
+Places of Interest: R
+Lineage Abilities: Gain +10% to the Abilities F
+Lineage Talents: Not mentioned in the text provided.
+Beast:
+
+Places of Interest: R
+Lineage Abilities: Gain +10% to the Abilities F
+Lineage Talents: True Skin, Wolf's Instincts, Lunar Energy
+Berserker:
+
+Places of Interest: R
+Lineage Abilities: Gain +10% to the Abilities F
+Lineage Talents: Unbridled Rage, Brutal Strength, Savage Attacks, Death or Dishonor, Rage Limb
+Blood:
+
+Places of Interest: R
+Lineage Abilities: Gain +10% to the Abilities F
+Lineage Talents: Blood Feast, Midnight Ascension, Eyes of the Night, Monstrous Visage, Predatory Limb
+Crusader:
+
+Places of Interest: R
+Lineage Abilities: Gain +10% to the Abilities F
+Lineage Talents: Aura of Devotion, Divine Magic, Holy Weapon, Divine Judgement, Crusaderâ€™s Limb
+Curseling:
+
+Places of Interest: R
+Lineage Abilities: Gain +10% to the Abilities F
+Lineage Talents: Corrupt Flesh, Twisted Clarity, Adaptability, Resistance to Harm, Corrupting Limb
+Demon:
+
+Places of Interest: R
+Lineage Abilities: Gain +10% to the Abilities F
+Lineage Talents: Defiler's Blessing*, Leperâ€™s Blessing*, Murdererâ€™s Blessing*, Traitorâ€™s Blessing*, Sacrificial Limb*
+Dreadnaught:
+
+Places of Interest: R
+Lineage Abilities: Gain +10% to the Abilities F
+Lineage Talents: Deflecting Plates, Iron Skin, Sealed in Steel, Artillery, Heathenâ€™s Limb
+Please note that "F" and "R" appear to be placeholders or references to other elements not provided in the text. Additionally, the asterisk (*) on some of the Demon's talents indicates that there might be more details or conditions not included here.
+
+Finally, unlocking the Dreadnaught lineage requires the player to either join a Club by passing a strength and toughness trial, or die in defense of or conquer a Club. The Dreadnaught lineage also includes a project called Armory, but the benefits per rating were not provided in the text.
+Witch Iron, a TTRPG system, consists of several key character abilities, lineages, and mechanics:
+
+Abilities:
+
+Animal Communication: Allows communication with animals within a certain radius, providing info about surroundings or influencing animal behavior. Spend Hits (equivalent to the desired effect level) to use this ability.
+Nature's Fury: Use the power of nature for attack. Spend Hits to unleash various effects like knocking enemies off balance, soaking enemies with water, or summoning lightning.
+Branch Limb: Use a transformed limb as a weapon or shield. Spend Hits to perform various actions like disarming opponents, entangling targets, or forming a protective barrier.
+Lineages:
+
+Flesh-Sculptor: A lineage with affinity to body modification. Traits include enhanced physical abilities, rapid Monster Quality extraction or implantation, ability to create a homunculus, and other flesh-altering skills. A Flesh-Sculptor can establish a Hospital project, enhancing their lineage over time.
+Inquisitor: A lineage that excels in detecting and combating magic. They possess various techniques to interrupt or resist magic and extract information.
+Musician: A lineage that channels magical power through music. Performances can harm enemies or inspire allies.
+Noble: A lineage with legal immunity and financial resources that enables them to gather mobs or leverage their wealth.
+Occultist: A lineage skilled in occult and magick. They possess a demon-bound limb, the ability to alter reality or sacrifice for magick, and can control The Defiled Wind.
+Each lineage has unique abilities and advantages, offering different gameplay styles. Characters can use Hits to activate abilities, making resource management crucial.
+
+For Flesh-Sculptor and other lineage-related projects, ratings are used to represent the scale of a project, with each rating increasing in cost but offering more benefits to the lineage.
+
+It also has a mechanic of extracting and applying Monster Qualities, requiring a Heal Check to perform, and can significantly alter the recipient.
+
+Please note that detailed rules and mechanics might be required for exact gameplay instructions.
+Summary:

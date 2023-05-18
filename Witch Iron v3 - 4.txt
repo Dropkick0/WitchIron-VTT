@@ -1,0 +1,146 @@
+
+The Silent City, The Netherrealm, The Halls of Judgement, The Final Repose, The Garden of Hate, and The Inscribed Sanctum seem to be important locations, though no specific information is provided about them.
+
+Three main lineages, or classes, are presented: Revenant, Rune-Carver, and Veteran. Each lineage has unique abilities and can undertake specific lineage projects.
+
+Revenant: Dedicated to the creation of a Necropolis, a place where the Revenant's ancestors can aid them in battle. Each Necropolis costs an amount of silver and a period of time based on its rating.
+
+Rune-Carver: Able to craft runes into objects or weapons, channel magic through runes, and read runes. They can create a Clanhall for their lineage, which comes with various benefits. Like the Necropolis, Clanhalls have costs and construction times based on their ratings.
+
+Veteran: They are skilled warriors with various combat abilities. They can create a Regiment, a military establishment that provides several benefits. The costs and times for creating a Regiment are also dependent on the rating.
+
+Each lineage can also undertake a special project:
+
+Revenant - The Grudge: A Necropolis to house their ancestor's spirits.
+Rune-Carver - Master Rune: A powerful runic item.
+Veteran - Memorial: A monument to honor fallen soldiers.
+All projects have costs based on their rating, and the project is completed when the Descendant dies. There are also specific requirements to unlock each lineage.
+
+Another class mentioned is Warden who are skilled hunters and sharpshooters. They can create a Ranger Guildhall and the requirements and costs for its creation are dependent on its rating.
+Here's the summary of the key elements from the Witch Iron RPG for creating a Foundry VTT system:
+
+Levels and Corresponding Experience Values:
+This system has 10 levels with respective experience requirements:
+
+Level	Experience Required
+2	800
+3	1,600
+4	3,200
+5	6,400
+6	12,800
+7	25,600
+8	51,200
+9	102,400
+10	204,800
+Campaign Options:
+The Apocalypse campaign sets an inevitable end for the setting. Groups decide the form and timeline of the end, typically 100, 200, or 300 years.
+
+The campaign concludes with the Apocalypse, but groups can choose to either survive in a post-apocalyptic landscape or restart with two unlocked Lineages.
+
+Monster Mechanics:
+Monsters have qualities that may be added as needed:
+
+Mob Scale:
+
+The scale affects the number of units, max wounds, and attack multipliers.
+Special rules apply for attack multipliers, mob engagement, area attack, and scale reduction.
+Size Scale:
+
+The scale affects max wounds and damage roll & soak.
+Monsters may also have the following quality: Feeble, Dreg, Strong, Expert, Master, which adjust their stats accordingly.
+
+Monsters may have specific flaws, like being affected by specific materials or conditions, and behavioral limitations.
+
+Monsters Statistics:
+Monsters have stats including Ability, Attacks, Speed, Wound, Soak, Damage Roll, Dealt Wounds, Specialized, Inept, MQ, and Flaws.
+
+Monster parts have a value in silver, which depends on their HD or Ability%.
+
+Monster Examples:
+Monsters like Basilisk, Sump Kraken, Krieg Beast, Wood Draken, Umfell Man, and Griffon are provided with full stat blocks, qualities, and flaws.
+
+Each monster has a set of qualities that grant them special abilities, and flaws that serve as weaknesses. They also have a preferred environment and specific behaviors.
+Here's a summary for each monster, their stats, specialties, and flaws:
+
+Flaw
+
+Obsessed (Horses): Focuses only on obtaining horses when in their presence.
+Hydra
+
+Ability: 66%
+Attacks: 3
+Speed: 30
+Wound: 5
+Damage Roll: d6 +16
+Soak: 18 (2)
+Specialized: Stalking, Being in Shallow Water, Reckless Combat
+Inept: Patience, Spotting Traps, Co-operation
+Qualities: Huge Sized, Hydra Heads, Regeneration (Fire), Hydra Weapon
+Flaw: Ashwood
+Jabbervrack
+
+Ability: 55%
+Attacks: 2
+Speed: 30
+Wound: 5
+Damage Roll: d6 +16
+Soak: 18 (3)
+Specialized: Feasting on the Wicked, Sensing the Wicked, Terrorizing the Wicked
+Inept: Hiding, Traveling Far, Self Preservation
+Qualities: Huge Sized, Flight, Black Blood, Maddening Form, Jabbervrack Weapons
+Flaw: Innocents
+Manticore
+
+Ability: 55%
+Attacks: 2
+Speed: 30
+Wound: 5
+Damage Roll: d6 +15
+Soak: 18 (3)
+Specialized: Hunting Humans, Mountain Navigation, Ambushing
+Inept: Fighting to the Death, Breaking Promises, Restraining Itself
+Qualities: Huge Sized, Flight, Spike Shot, Manticore Tail
+Flaw: Meteoric Iron (Bleed 1)
+Pegasus
+
+Ability: 33%
+Attacks: 1
+Speed: 30
+Wound: 4
+Damage Roll: d6 +8
+Soak: 8 (0)
+Specialized: Long Distance Travel, Human-like Thought, Being a Mount
+Inept: Spotting a Trap, Staying in a Fight, Fighting Starvation
+Qualities: Large Sized, Flight, Long Stride
+Flaw: Tell-Tale Sign (Large Feathers)
+Troll
+
+Ability: 55%
+Attacks: 2
+Speed: 30
+Wound: 4
+Damage Roll: d6 +10
+Soak: 12 (2)
+Specialized: Consume Anything, Survive Anywhere, Fight Anyone
+Inept: Independent Thought, Carrying out Plans, Learning from Mistakes
+Qualities: Large Sized, Regeneration (Fire), Unkillable (Fire), Wields (Troll Club)
+Flaw: Stupid
+Wyvern
+
+Ability: 60%
+Attacks: 1
+Speed: 30
+Wound: 5
+Damage Roll: d6 +16
+Soak: 19 (3)
+Specialized: Smell, Opportunistic Hunter, Escaping by Any Means
+Inept: Sight, Fighting for Territory, Defending its Own
+Qualities: Huge Sized, Flight, Wyvern Poison Tail, Wyvern Weapon
+Flaw: Terrified (Larger Foes)
+The game also provides a Quick OSR Stat Conversion for Monster Stats, Armor & Damage, and Size & Mob Modification. Each creature's stats include Ability, Attacks, Speed, Wound, Damage Roll, Soak, Specializations, Ineptitudes, Qualities, and Flaws.
+
+Specializations grant bonuses, ineptitudes impose penalties, qualities provide special abilities or characteristics, and flaws highlight weaknesses or restrictions. There are also guidelines for converting stats from other systems and rules for handling creature size and mobs of creatures.
+
+
+
+
